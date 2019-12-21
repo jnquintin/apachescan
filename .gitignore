@@ -1,0 +1,4 @@
+.gitignore
+
+.eggs/
+HTTP_Log_Analyzer.egg-info/
