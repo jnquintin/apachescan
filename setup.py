@@ -30,8 +30,9 @@ setup(
     author_email='quintin.jeannoel@gmail.com',
     packages=find_packages(),
     install_requires=REQUIREMENTS,
-    scripts=[
-        'scripts/apachescand'
-    ],
+    entry_points={
+        'console_scripts': [
+            'apachescand = apachescan.daemon:main']
+    },
     test_suite='nose.collector',
 )
