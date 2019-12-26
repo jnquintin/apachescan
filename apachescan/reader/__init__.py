@@ -1,7 +1,6 @@
 """
+Modules reading logs
 """
 
 
 from . import filehandler
-
-__all__ = ["filehandler"]
