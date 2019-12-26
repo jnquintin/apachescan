@@ -92,7 +92,7 @@ def main():
                              help='Number of retry before stopping.'
                              ' If the value is 0, the command run forever'
                              ' (default: %(default)s)')
-    args_parser.add_argument('-w', '--wait-time', action='store',
+    args_parser.add_argument('--wait-time', action='store',
                              type=float, default=0.5,
                              help='Time to wait before reading new logs after'
                              ' reaching the last log.'
