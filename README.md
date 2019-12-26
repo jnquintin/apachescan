@@ -53,6 +53,7 @@ run (change python version if required):
 export PYTHONVERSION=2.7
 export PYTHONPATH=$PYTHONPATH:$PWD/install/lib/python${PYTHONVERSION}/site-packages/
 export PATH=$PATH:$PWD/install/bin/
+python setup.py test
 mkdir -p $PWD/install/lib/python2.7/site-packages/
 python setup.py install --prefix $PWD/install
 ```
