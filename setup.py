@@ -1,5 +1,5 @@
 import re
-from setuptools import setup
+from setuptools import setup, find_packages
 
 VERSIONFILE = "apachescan/__version__.py"
 REQUIREMENTS = []
@@ -21,15 +21,14 @@ with open("requirements.txt", 'r') as f:
     REQUIREMENTS = f.readlines()
 
 setup(
-    name='HTTP Log Analyzer',
+    name='apachescan',
     version=get_version(),
     description='Module scanning Apache HTTP Server log',
     license="BSD",
-    long_description="""
-    """,
+    provides=["apachescan"],
     author='Quintin Jean-Noel',
     author_email='quintin.jeannoel@gmail.com',
-    packages=['apachescan'],  # same as name
+    packages=find_packages(),
     install_requires=REQUIREMENTS,
     scripts=[
         'scripts/apachescand'
