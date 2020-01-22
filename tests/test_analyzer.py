@@ -32,9 +32,9 @@ class TestLogAnalyzer(unittest.TestCase):
 
         number_of_requests = 0
         size_of_requests = 0
-        for ip in xrange(10):
-            for local_user in xrange(3):
-                for response_size in xrange(local_user):
+        for ip in range(10):
+            for local_user in range(3):
+                for response_size in range(local_user):
                     for status_code in [200, 403, 503]:
                         default_request["ip"] = ip
                         default_request["local_user"] = "user" + \

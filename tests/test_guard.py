@@ -27,7 +27,7 @@ class TestGuard(unittest.TestCase):
         random_numbers = []
 
         # with double number some variation occurs because of rounding error
-        for i in xrange(10):
+        for i in range(10):
             random_numbers.append(int(random.random() * 10))
 
         accumulated_value = 0
